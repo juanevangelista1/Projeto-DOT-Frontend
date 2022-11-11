@@ -38,6 +38,7 @@ ul {
   --base-color-second: #ffcc33;
   --base-color-alt: #7a2b58;
   --base-color-blue: #03b5b0;
+  --base-color-red: #ff3737;
   --title-color: #f7f4f;
   --text-color: #363636;
   --text-color-light: #fafafa;
@@ -122,7 +123,7 @@ body {
 }
 
 #header {
-  border-bottom: 1px solid hsla(0, 0%, 89%, 1);
+  border-bottom: 1px solid #e3e3e3;
   margin-bottom: 2rem;
   display: flex;
 
@@ -436,55 +437,82 @@ nav.show ul li {
 }
 /*=========== SERVICES ========================= */
 
-#services .cards.grid {
-  gap: 1.5rem;
-  text-align: center;
-}
-
 #InterativeImg {
   height: 40rem;
   width: 40rem;
 }
 
-#services .card {
-  padding: 3.625rem 2rem;
-  border-bottom: 0.25rem solid var(--base-color);
-  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
-  border-radius: 0.25rem 0.25rem 0 0;
-  text-align: center;
-}
-
-#services .card i {
-  display: block;
-  font-size: 5rem;
-  color: var(--base-color);
-  margin-bottom: 1.5rem;
-}
-
-#services .card .title {
-  font-size: 1.5rem;
-  margin-bottom: 0.75rem;
-}
-
 .cards-grid img {
-  height: 1rem;
+  height: 1.25rem;
+}
+
+#yellow-circle {
+  border: 1px solid var(--text-color);
+  background-color: var(--base-color-second);
+  border-radius: 100%;
+  text-overflow: initial;
+  height: 20rem;
+  width: 20rem;
+}
+
+.text-yellow {
   text-align: center;
+  padding-top: calc(20%);
+  margin: 2rem;
+}
+
+#gray-circle {
+  border: 1px solid var(--text-color);
+  background-color: var(--text-color);
+  border-radius: 100%;
+  text-overflow: initial;
+  height: 20rem;
+  width: 20rem;
+  color: var(--text-color-light);
+}
+
+.text-gray {
+  text-align: center;
+  padding-top: calc(20%);
+  margin: 2rem;
+}
+
+#red-circle {
+  border: 1px solid var(--text-color);
+  background-color: var(--base-color-red);
+  border-radius: 100%;
+  text-overflow: initial;
+  height: 20rem;
+  width: 20rem;
+  color: var(--text-color-light);
+}
+
+.text-red {
+  text-align: center;
+  padding-top: calc(20%);
+  margin: 2rem;
 }
 
 #services .button-top {
   background: var(--base-color-blue);
-  height: 2rem;
-  width: 2rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  border: none;
+  border-radius: 30px;
 }
 
 #services .button-left {
   background: var(--base-color-blue);
-  height: 2rem;
-  width: 2rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  border: none;
+  border-radius: 30px;
 }
 
 #services .button-right {
   background: var(--base-color-blue);
-  height: 2rem;
-  width: 2rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  border: none;
+  border-radius: 30px;
 }
