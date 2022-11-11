@@ -25,10 +25,10 @@ ul {
 
 /*=========== VARIABLES ========================= */
 :root {
-  --hue: 159;
   --base-color: #9f9f9f;
   --base-color-second: #ffcc33;
   --base-color-alt: #7a2b58;
+  --base-color-blue: #03b5b0;
   --title-color: #f7f4f;
   --text-color: #363636;
   --text-color-light: #fafafa;
@@ -212,7 +212,6 @@ nav .icon-close {
 .toggle {
   font-size: 1.5rem;
   color: var(--base-color);
-
   cursor: pointer;
 }
 
@@ -286,10 +285,6 @@ nav.show ul li {
 
 /*=========== ABOUT ========================= */
 
-#Dropdown {
-  color: var(--base-color-second);
-}
-
 #about {
   background: white;
 }
@@ -326,12 +321,14 @@ nav.show ul li {
 /*=========== BUSINESS ========================= */
 #Business {
   background-color: var(--base-color-alt);
-  height: 40vh;
+  /* height: 40vh; */
+  width: 100%;
   text-align: center;
 }
 
 .businessContent {
   border: 2px solid var(--body-color);
+  width: calc(50%);
   border-radius: 8px;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
   padding: 2rem;
@@ -341,10 +338,97 @@ nav.show ul li {
 }
 
 .businessText {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+  gap: 2rem;
 }
 
 .iconBusiness {
   height: 5rem;
+}
+/*=========== DROPDOWN ========================= */
+
+.dropdownCard {
+  background: var(--base-color-blue);
+  text-align: center;
+  /* margin-bottom: 10rem; */
+}
+
+.dropdownHeader {
+  text-align: center;
+  color: var(--base-color-second);
+}
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+  gap: 2rem;
+  padding: 5rem;
+}
+
+.cardContainer img {
+  height: 7rem;
+  width: 7rem;
+}
+
+.card01 {
+  background: var(--body-color);
+  border-radius: 10px;
+}
+.card01 p {
+  overflow: hidden;
+}
+
+.card02 {
+  background: var(--body-color);
+  border-radius: 10px;
+}
+.card03 {
+  background: var(--body-color);
+  border-radius: 10px;
+}
+
+.footerCard {
+  background: var(--base-color-alt);
+  height: 2rem;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.footerCard img {
+  width: 2rem;
+  height: 2rem;
+  align-items: center;
+}
+
+.footerCard button {
+  margin-top: 0.5rem;
+  border-radius: 30px;
+  width: 3rem;
+  height: 3rem;
+  border: none;
+}
+
+/*=========== 4 section  ========================= */
+
+.section4 {
+  background: var(--text-color);
+  color: var(--text-color-light);
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+}
+
+#section4Title {
+  color: var(--base-color-blue);
+  text-align: center;
+}
+
+.section4Card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+  gap: 2rem;
+  padding: 5rem;
+  align-items: center;
 }
 /*=========== SERVICES ========================= */
 
@@ -415,31 +499,6 @@ nav.show ul li {
 }
 
 /*=========== CONTACT ========================= */
-
-#contact p {
-  line-height: 1.625rem;
-}
-
-#contact .datas i {
-  font-size: 1.5rem;
-  margin-right: 0.75rem;
-  color: var(--base-color);
-}
-
-#contact .datas .data {
-  margin-bottom: 2rem;
-}
-
-#contact i.icon-whatsapp {
-  color: blue;
-  margin-right: 0.625rem;
-}
-
-#contact .button {
-  width: 14.75rem;
-  height: 3.5rem;
-  margin-bottom: 4rem;
-}
 
 /*=========== SWIPER ========================= */
 .swiper-slide {
