@@ -8,8 +8,6 @@ for (var element of toggle) {
     evento
   })
 }
-//cara esse comentario é importante
-// Fechar quando clicar no a
 
 const links = document.querySelectorAll('nav ul li a')
 
@@ -36,17 +34,5 @@ window.addEventListener('scroll', function () {
     header.classList.add('scroll')
   } else {
     header.classList.remove('scroll')
-  }
-})
-
-// SWIPER
-
-const swiper = new Swiper('.swiper', {
-  slidesPerView: 1,
-  direction: 'horizontal',
-  loop: false,
-  pagination: {
-    el: '.swiper-pagination',
-    dynamicBullets: false
   }
 })

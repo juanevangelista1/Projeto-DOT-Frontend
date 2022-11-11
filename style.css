@@ -4,16 +4,25 @@
   padding: 0;
   box-sizing: border-box;
   line-height: 1, 625rem;
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar {
+  width: 0.45rem;
+}
+::-webkit-scrollbar-track {
+  background: var(--base-color-alt);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--text-color-light);
+  border-radius: 999px;
 }
 
 a {
   text-decoration: none;
-  color: pink;
 }
-.div-importante {
-  display: flex;
-  background: white;
-}
+
 img {
   width: 100%;
   height: auto;
@@ -83,11 +92,6 @@ body {
 .container {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
-}
-
-.grid {
-  display: grid;
-  gap: 2rem;
 }
 
 .section {
@@ -321,7 +325,6 @@ nav.show ul li {
 /*=========== BUSINESS ========================= */
 #Business {
   background-color: var(--base-color-alt);
-  /* height: 40vh; */
   width: 100%;
   text-align: center;
 }
@@ -407,6 +410,7 @@ nav.show ul li {
   width: 3rem;
   height: 3rem;
   border: none;
+  cursor: pointer;
 }
 
 /*=========== 4 section  ========================= */
@@ -434,6 +438,12 @@ nav.show ul li {
 
 #services .cards.grid {
   gap: 1.5rem;
+  text-align: center;
+}
+
+#InterativeImg {
+  height: 40rem;
+  width: 40rem;
 }
 
 #services .card {
@@ -456,61 +466,25 @@ nav.show ul li {
   margin-bottom: 0.75rem;
 }
 
-/*=========== TESTIMONIALS ========================= */
-
-#testimonials {
-  background: white;
+.cards-grid img {
+  height: 1rem;
+  text-align: center;
 }
 
-#testimonials blockquote {
-  padding: 2rem;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+#services .button-top {
+  background: var(--base-color-blue);
+  height: 2rem;
+  width: 2rem;
 }
 
-#testimonials blockquote p {
-  margin-bottom: 1.5rem;
-  text-indent: 1.875rem;
-  position: relative;
-  color: var(--title-color);
+#services .button-left {
+  background: var(--base-color-blue);
+  height: 2rem;
+  width: 2rem;
 }
 
-#testimonials blockquote p span {
-  color: var(--base-color);
-  font: 700 2.5rem serif;
-
-  position: absolute;
-
-  top: -0.25rem;
-  left: -1.75rem;
-}
-
-#testimonials cite {
-  display: flex;
-  align-items: center;
-  font-style: normal;
-}
-
-#testimonials cite img {
-  height: 1.5rem;
-  width: 1.5rem;
-  clip-path: circle();
-  object-fit: cover;
-  margin-right: 0.5rem;
-}
-
-/*=========== CONTACT ========================= */
-
-/*=========== SWIPER ========================= */
-.swiper-slide {
-  height: auto;
-  padding: 4rem 1rem;
-}
-
-.swiper-pagination-bullet {
-  width: 0.75rem;
-  height: 0.75rem;
-}
-
-.swiper-pagination-bullet-active {
-  background-color: var(--base-color);
+#services .button-right {
+  background: var(--base-color-blue);
+  height: 2rem;
+  width: 2rem;
 }
