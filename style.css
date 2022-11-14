@@ -180,11 +180,9 @@ nav ul li a::after {
   width: 0%;
   height: 2px;
   background-color: var(--base-color);
-
   position: absolute;
   left: 0;
   bottom: -1.5rem;
-
   transition: width 0.2s;
 }
 
@@ -196,7 +194,6 @@ nav .menu {
   opacity: 0;
   visibility: hidden;
   top: -20rem;
-
   transition: 0.2s;
 }
 
@@ -233,9 +230,7 @@ nav.show .icon-close {
 nav.show .menu {
   opacity: 1;
   visibility: visible;
-
   background-color: var(--body-color);
-
   height: 100vh;
   width: 100vw;
   position: fixed;
@@ -365,7 +360,7 @@ nav.show ul li {
 
 .cardContainer {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   gap: 2rem;
   padding: 5rem;
 }
@@ -379,8 +374,11 @@ nav.show ul li {
   background: var(--body-color);
   border-radius: 10px;
 }
+
 .card01 p {
-  overflow: hidden;
+  visibility: hidden;
+  background: var(--base-color-second);
+  color: var(--base-color-alt);
 }
 
 .card02 {

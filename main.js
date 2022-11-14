@@ -2,6 +2,35 @@
 const nav = document.querySelector('#header nav')
 const toggle = document.querySelectorAll('nav .toggle')
 
+const buttonShow = document.querySelectorAll(
+  '#buttonBusiness01, #buttonBusiness02, #buttonBusiness03'
+)
+
+for (element of buttonShow) {
+  element.addEventListener('click', function () {
+    console.log('funcionou')
+  })
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 for (var element of toggle) {
   element.addEventListener('click', function () {
     nav.classList.toggle('show')
