@@ -444,6 +444,10 @@ nav.show ul li {
   height: 1.25rem;
 }
 
+.img-container {
+  text-align: center;
+}
+
 #yellow-circle {
   border: 1px solid var(--text-color);
   background-color: var(--base-color-second);
