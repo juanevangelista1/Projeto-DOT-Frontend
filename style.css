@@ -509,6 +509,11 @@ nav.show ul li {
   margin: 2rem;
 }
 
+#baseCardContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+}
+
 #services .button-top {
   background: var(--base-color-blue);
   height: 2.5rem;
