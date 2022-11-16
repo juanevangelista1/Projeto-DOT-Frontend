@@ -69,21 +69,23 @@
         <header class="dropdownHeader">
           <h2>Dropdown</h2>
         </header>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          Reprehenderit est odit veniam dicta beatae magni ut, modi deserunt
-          mollitia esse alias obcaecati veritatis quidem fugit illum quaerat
-          iusto sunt earum?
-        </p>
+        <div class="textContainer">
+          <article>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Reprehenderit est odit veniam dicta beatae magni ut, modi deserunt
+            mollitia esse alias obcaecati veritatis quidem fugit illum quaerat
+            iusto sunt earum?
+          </article>
+        </div>
         <div class="cardContainer">
           <div class="card01">
             <img src="assets/icones/icones/icon-02.svg" alt="" />
             <div class="footerCard">
-              <button onclick="show()" id="buttonBusiness01">
+              <button id="toggleButton1">
                 <img src="assets/icones/icones/icon-arrow-down.svg" alt="" />
               </button>
             </div>
-            <div id="text-show">
+            <div id="text-show1">
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
                 illo, animi, cupiditate in laudantium optio nulla alias fuga
@@ -95,7 +97,7 @@
           <div class="card02">
             <img src="assets/icones/icones/icon-03.svg" alt="" />
             <div class="footerCard">
-              <button id="buttonBusiness02">
+              <button id="toggleButton2">
                 <img src="assets/icones/icones/icon-arrow-down.svg" alt="" />
               </button>
             </div>
@@ -111,7 +113,7 @@
           <div class="card03">
             <img src="assets/icones/icones/icon-04.svg" alt="" />
             <div class="footerCard">
-              <button id="buttonBusiness03">
+              <button id="toggleButton3">
                 <img src="assets/icones/icones/icon-arrow-down.svg" alt="" />
               </button>
             </div>
@@ -178,6 +180,11 @@
             </p>
           </header>
           <div id="cards-grid">
+            <div class="card1">
+              <button class="button-top">
+                <img src="assets/icones/icones/icon-plus.svg" alt="" />
+              </button>
+            </div>
             <div class="img-container">
               <div class="InterativeImgBg">
                 <div id="yellow-circle">
@@ -186,29 +193,12 @@
                     Lorem ipsum dolor sit amet consectetur.
                   </p>
                 </div>
-              </div>
-            </div>
-            <div class="card1">
-              <button class="button-top">
-                <img src="assets/icones/icones/icon-plus.svg" alt="" />
-              </button>
-            </div>
-            <div id="baseCardContainer">
-              <div class="card2">
-                <button class="button-left">
-                  <img src="assets/icones/icones/icon-plus.svg" alt="" />
-                </button>
                 <!-- <div id="red-circle">
                   <p class="text-red">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Lorem ipsum dolor sit amet consectetur.
                   </p>
                 </div> -->
-              </div>
-              <div class="card3">
-                <button class="button-right">
-                  <img src="assets/icones/icones/icon-plus.svg" alt="" />
-                </button>
                 <!-- <div id="gray-circle">
                   <p class="text-gray">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -217,67 +207,24 @@
                 </div> -->
               </div>
             </div>
+
+            <div id="baseCardContainer">
+              <div class="card2">
+                <button class="button-left">
+                  <img src="assets/icones/icones/icon-plus.svg" alt="" />
+                </button>
+              </div>
+              <div class="card3">
+                <button class="button-right">
+                  <img src="assets/icones/icones/icon-plus.svg" alt="" />
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- TESTIMONIALS
-      <section class="section" id="testimonials">
-        <div class="container">
-          <header>
-            <h2 class="title">Depoimentos de quem já passou por aqui</h2>
-          </header>
-          <div class="testimonials swiper">
-            <div class="swiper-wrapper">
-              <div class="testimonial swiper-slide">
-                <blockquote>
-                  <p>
-                    <span>&ldquo;</span>Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Suscipit ab illo libero facere commodi
-                    expedita rerum numquam officiis magnam ea tenetur
-                  </p>
-                  <cite>
-                    <img
-                      src="assets/images/33.jpg"
-                      alt="Foto Wyatt Rodriguez"
-                    />
-                    Wyatt Rodriguez
-                  </cite>
-                </blockquote>
-              </div>
-
-              <div class="testimonial swiper-slide">
-                <blockquote>
-                  <p>
-                    <span>&ldquo;</span>Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Suscipit ab illo libero facere commodi
-                    expedita rerum numquam officiis magnam ea tenetur
-                  </p>
-                  <cite>
-                    <img src="assets/images/71.jpg" alt="Foto Allison Turner" />
-                    Allison Turner
-                  </cite>
-                </blockquote>
-              </div>
-
-              <div class="testimonial swiper-slide">
-                <blockquote>
-                  <p>
-                    <span>&ldquo;</span>Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Suscipit ab illo libero facere commodi
-                    expedita rerum numquam officiis magnam ea tenetur
-                  </p>
-                  <cite>
-                    <img src="assets/images/81.jpg" alt="Foto Victor Allen" />
-                    Victor Allen
-                  </cite>
-                </blockquote>
-              </div>
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
-        </div>
-      </section> -->
+      <!-- FOOTER -->
       <section class="section" id="contact">
         <div class="container grid">
           <a href="" target="_blank"
@@ -286,6 +233,30 @@
         </div>
       </section>
     </main>
-    <script src="main.js"></script>
+
+    <!-- JAVASCRIPT -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $('#toggleButton1').click(function () {
+          $('#text-show1').toggle(400)
+        })
+      })
+    </script>
+    <script>
+      $(document).ready(function () {
+        $('#toggleButton2').click(function () {
+          $('#text-show2').toggle(400)
+        })
+      })
+    </script>
+    <script>
+      $(document).ready(function () {
+        $('#toggleButton3').click(function () {
+          $('#text-show3').toggle(400)
+        })
+      })
+    </script>
   </body>
 </html>

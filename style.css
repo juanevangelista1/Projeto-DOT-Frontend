@@ -303,13 +303,13 @@ nav.show ul li {
 
 .businessContent {
   border: 2px solid var(--body-color);
-  width: calc(50%);
   border-radius: 8px;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
   padding: 2rem;
   color: var(--text-color-light);
   margin-right: calc(25%);
   margin-left: calc(25%);
+  font-size: 1.25rem;
 }
 
 .subtitle-business {
@@ -348,41 +348,50 @@ nav.show ul li {
 }
 
 .cardContainer img {
-  height: 7rem;
-  width: 7rem;
+  height: 9rem;
+  width: 9rem;
 }
 
 .card01 {
   background: var(--body-color);
   border-radius: 10px;
+  padding-top: 2rem;
 }
 
-.card01 p {
-  display: none;
+#text-show1 {
+  padding: 2rem;
   background: var(--base-color-second);
   color: var(--base-color-alt);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .card02 {
   background: var(--body-color);
   border-radius: 10px;
+  padding-top: 2rem;
 }
 
-.card02 p {
-  visibility: hidden;
-  background: var(--body-color);
-  border-radius: 10px;
+#text-show2 {
+  padding: 2rem;
+  background: var(--base-color-second);
+  color: var(--base-color-alt);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
-.card03 p {
-  visibility: hidden;
-  background: var(--body-color);
-  border-radius: 10px;
+#text-show3 {
+  padding: 2rem;
+  background: var(--base-color-second);
+  color: var(--base-color-alt);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .card03 {
   background: var(--body-color);
   border-radius: 10px;
+  padding-top: 2rem;
 }
 
 .footerCard {
