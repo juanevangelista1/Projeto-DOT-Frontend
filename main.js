@@ -1,33 +1,27 @@
-// // Abrir e fechar Menu
-// const nav = document.querySelector('#header nav')
-// const toggle = document.querySelectorAll('nav .toggle')
+$(document).ready(function () {
+  $('#toggleButton1').click(function () {
+    $('#text-show1').toggle(400)
+    if ($('#text-show1').is(':visible')) {
+      $('#arrowDownImg1').attr('id', 'arrowUpImg')
+    } else if ($('#text-show1').is(':hidden')) {
+      $('#arrowUpImg').attr('id', 'arrowUpImg')
+    }
+  })
+})
 
-// const buttonShow = document.querySelectorAll(
-//   '#buttonBusiness01, #buttonBusiness02, #buttonBusiness03'
-// )
+$(document).ready(function () {
+  $('#toggleButton2').click(function () {
+    $('#text-show2').toggle(400)
+  })
+})
 
-// for (element of buttonShow) {
-//   element.addEventListener('click', function () {
-//     console.log('funcionou')
-//   })
-// }
+$(document).ready(function () {
+  $('#toggleButton3').click(function () {
+    $('#text-show3').toggle(400)
+  })
+})
 
-// for (var element of toggle) {
-//   element.addEventListener('click', function () {
-//     nav.classList.toggle('show')
-//     evento
-//   })
-// }
-
-// const links = document.querySelectorAll('nav ul li a')
-
-// for (var link of links) {
-//   link.addEventListener('click', function () {
-//     nav.classList.remove('show')
-//   })
-// }
-
-// // Shadow after scroll on header
+// Shadow after scroll on header
 
 // const header = document.querySelector('#header')
 // const navHeight = header.offsetHeight

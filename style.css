@@ -345,10 +345,36 @@ nav.show ul li {
   border-bottom-left-radius: 10px;
 }
 
-.footerCard img {
+#arrowDownImg1 {
   width: 2rem;
   height: 2rem;
   align-items: center;
+  background-image: url(assets/icones/icones/icon-arrow-down.svg);
+  background-repeat: no-repeat;
+}
+
+#arrowDownImg2 {
+  width: 2rem;
+  height: 2rem;
+  align-items: center;
+  background-image: url(assets/icones/icones/icon-arrow-down.svg);
+  background-repeat: no-repeat;
+}
+
+#arrowDownImg3 {
+  width: 2rem;
+  height: 2rem;
+  align-items: center;
+  background-image: url(assets/icones/icones/icon-arrow-down.svg);
+  background-repeat: no-repeat;
+}
+
+#arrowUpImg {
+  width: 2rem;
+  height: 2rem;
+  align-items: center;
+  background-image: url(assets/icones/icones/icon-arrow-up.svg);
+  background-repeat: no-repeat;
 }
 
 .footerCard button {
