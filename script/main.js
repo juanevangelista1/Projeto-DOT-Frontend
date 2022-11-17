@@ -3,15 +3,7 @@ $(document).ready(function () {
     $('#text-show1').toggle(400)
     if ($('#text-show1').is(':visible')) {
       $('#arrowDownImg1').attr('id', 'arrowUpImg')
-    } else if ($('#text-show1').is(':hidden')) {
-      $('#arrowDownImg1').removeAttr('id', 'arrowUpImg')
     }
-  })
-})
-
-$(document).ready(function () {
-  $('#toggleButton2').click(function () {
-    $('#text-show2').toggle(400)
   })
 })
 
@@ -20,6 +12,13 @@ $(document).ready(function () {
     $('#text-show3').toggle(400)
   })
 })
+
+// $('#drop-down-card-footer-icon').click(function toggleDropDown() {
+//   $('#drop-down-card-footer-icon, #drop-down-card-footer-div')
+//     .toggle()
+//     .css('visibility', 'visible')
+//   $('#drop-down-card-footer-div-clicked').toggleClass('hide')
+// })
 
 // Shadow after scroll on header
 
