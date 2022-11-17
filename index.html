@@ -8,8 +8,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="Assets/Fonts/style.css" />
+
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -36,16 +37,16 @@
         </div>
       </section>
       <!-- BUSINESS -->
-      <section class="case-container">
+      <section class="businessContainer">
         <h2>Lorem Ipsun</h2>
-        <div id="case-container-div">
+        <div id="businessContainerDiv">
           <img
-            id="case-container-img"
+            id="businessContainerImg"
             src="assets/icones/icones/icon-01.svg"
             alt=""
           />
-          <div id="case-container-text">
-            <p id="case-container-p">
+          <div id="businessContainerText">
+            <p id="businessContainerP">
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
               nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
               erat volutpat.
@@ -65,7 +66,7 @@
           </div>
         </div>
         <div id="case-container-icon-blue-big">
-          <img src="./assets/icones/icon-blue-big.svg" alt="" />
+          <img src="assets/icones/icones/icon-blue-big.svg" alt="" />
         </div>
       </section>
 
@@ -85,9 +86,9 @@
         <div class="cardContainer">
           <div class="card01">
             <img src="assets/icones/icones/icon-02.svg" alt="" />
-            <div class="footerCard">
-              <button id="toggleButton1">
-                <img id="arrowDownImg1" alt="" />
+            <div id="footerCard">
+              <button onclick="showCard1() " id="toggleButton1">
+                <!-- <img id="arrowDownImg1" alt="" /> -->
               </button>
             </div>
             <div>
@@ -101,9 +102,9 @@
           </div>
           <div class="card02">
             <img src="assets/icones/icones/icon-03.svg" alt="" />
-            <div class="footerCard">
-              <button id="toggleButton2" onclick="show2()">
-                <img id="arrowDownImg2" alt="" />
+            <div id="footerCard">
+              <button id="toggleButton2" onclick="showCard2() ">
+                <!-- <img id="arrowDownImg2" alt="" /> -->
               </button>
             </div>
             <div id="text-show2">
@@ -117,9 +118,9 @@
           </div>
           <div class="card03">
             <img src="assets/icones/icones/icon-04.svg" alt="" />
-            <div class="footerCard">
-              <button id="toggleButton3">
-                <img id="arrowDownImg3" alt="" />
+            <div id="footerCard">
+              <button id="toggleButton3" onclick="showCard3() ">
+                <!-- <img id="arrowDownImg3" alt="" /> -->
               </button>
             </div>
             <div id="text-show3">
@@ -245,6 +246,6 @@
     <!-- JAVASCRIPT -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <script src="script/main.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>

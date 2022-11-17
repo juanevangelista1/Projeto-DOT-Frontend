@@ -135,7 +135,7 @@ nav {
 }
 
 /*=========== BUSINESS ========================= */
-.case-container {
+.businessContainer {
   width: 100%;
   height: 40rem;
   background-color: var(--base-color-alt);
@@ -147,7 +147,7 @@ nav {
   position: relative;
 }
 
-.case-container h2 {
+.businessContainer h2 {
   width: 100%;
   height: 100px;
   text-align: center;
@@ -156,7 +156,7 @@ nav {
   color: var(--base-color-second);
 }
 
-#case-container-div {
+#businessContainerDiv {
   display: flex;
   width: 100%;
   max-width: 70rem;
@@ -171,16 +171,16 @@ nav {
   justify-content: center;
 }
 
-#case-container-img {
+#businessContainerImg {
   width: 180px;
   margin: 0 100px 0 120px;
 }
 
-#case-container-text {
+#businessContainerText {
   width: 50%;
 }
 
-#case-container-p {
+#businessContainerP {
   margin: 25px;
 }
 
@@ -230,11 +230,16 @@ nav {
   width: 9rem;
 }
 
-.footerCard {
+#footerCard {
   background: var(--base-color-alt);
   height: 2rem;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
+}
+
+#footerCardHide {
+  background: var(--base-color-second);
+  height: 2rem;
 }
 
 .card01,
@@ -255,33 +260,31 @@ nav {
   border-bottom-right-radius: 10px;
 }
 
-#arrowDownImg1,
-#arrowDownImg2,
-#arrowDownImg3 {
-  width: 2rem;
-  height: 2rem;
-  align-items: center;
-  text-align: center;
-  background-image: url(../assets/icones/icones/icon-arrow-down.svg);
-  background-repeat: no-repeat;
-}
-
-#arrowUpImg {
-  width: 2rem;
-  height: 2rem;
-  align-items: center;
-  text-align: center;
-  background-image: url(../assets/icones/icones/icon-arrow-down.svg);
-  background-repeat: no-repeat;
-}
-
-.footerCard button {
+#arrowUpButton {
   margin-top: 0.5rem;
   border-radius: 30px;
   width: 3rem;
   height: 3rem;
   border: none;
   cursor: pointer;
+  background-image: url(../assets/icones/icones/icon-arrow-up.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--base-color-alt);
+}
+
+#toggleButton1,
+#toggleButton2,
+#toggleButton3 {
+  margin-top: 0.5rem;
+  border-radius: 30px;
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  cursor: pointer;
+  background-image: url(../assets/icones/icones/icon-arrow-down.svg);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /*=========== 4 section  ========================= */
