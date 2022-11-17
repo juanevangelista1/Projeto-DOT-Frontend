@@ -39,13 +39,13 @@ a {
 /*=========== BASE ========================= */
 
 body {
-  font: 400 1rem 'DM Sans', sans-serif;
+  font: 400 1.25rem 'DM Sans', sans-serif;
   color: var(--text-color);
   -webkit-font-smoothing: antialiased;
 }
 
 .title {
-  font: 700 1.875rem 'Poppins', sans-serif;
+  font: 700 2.5rem 'Poppins', sans-serif;
   color: var(--text-color);
   -webkit-font-smoothing: auto;
 }
@@ -54,42 +54,13 @@ body {
   color: var(--text-color-light);
 }
 
-.subtitle-business {
-  color: var(--base-color-second);
-  line-height: 5rem;
-  height: 4rem;
-}
-
-/*=========== LAYOUT ========================= */
+/*=========== HEADER ========================= */
 .container {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
   flex-wrap: wrap;
   align-content: center;
   justify-content: space-around;
-}
-
-#contact {
-  align-items: center;
-  justify-content: space-around;
-  display: flex;
-  background: var(--base-color-alt);
-}
-
-#contact img {
-  height: 3.5rem;
-}
-
-.section .title {
-  margin-bottom: 1rem;
-}
-
-.section header {
-  margin-bottom: 4rem;
-}
-
-.section header strong {
-  color: var(--base-color);
 }
 
 #header {
@@ -104,17 +75,24 @@ body {
   width: 100%;
 }
 
-#header.scroll {
-  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15);
-  transition: 0.2s;
-}
-
-/*=========== LOGO ========================= */
-
 .logo {
   font: 700 1.3125rem 'Poppins', sans-serif;
   color: var(--base-color-alt);
   font-size: x-large;
+}
+
+/* ============ FOOTER ============== */
+
+#contact {
+  padding: 3rem;
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  background: var(--base-color-alt);
+}
+
+#contact img {
+  height: 3.5rem;
 }
 
 /*=========== NAVIGATION ========================= */
@@ -126,46 +104,10 @@ nav {
   width: 100%;
 }
 
-/* Mostrar Menu */
-/* 
-nav.show .icon-close {
-  opacity: 1;
-  visibility: visible;
-  top: 1.5rem;
-
-  transition: 0.3s;
-}
-
-nav.show .menu {
-  opacity: 1;
-  visibility: visible;
-  background-color: var(--body-color);
-  height: 100vh;
-  width: 100vw;
-  position: fixed;
-  top: 0;
-  left: 0;
-
-  display: grid;
-  place-content: center;
-}
-
-nav.show .menu ul {
-  display: grid;
-}
-
-nav.show ul.grid {
-  gap: 4rem;
-}
-
-nav.show ul li {
-  text-align: center;
-} */
-
 /*=========== HOME ========================= */
 
 .container-grid-Header {
-  background-image: url('assets/fotos/header-1920.png');
+  background-image: url('../assets/fotos/header-1920.png');
   position: relative;
   height: 90vh;
   background-repeat: no-repeat;
@@ -192,83 +134,72 @@ nav.show ul li {
   -webkit-font-smoothing: auto;
 }
 
-/*=========== ABOUT ========================= */
-
-#about {
-  background: white;
-}
-
-#about .container {
-  margin: 0;
-}
-
-#about .image {
-  position: relative;
-  z-index: 1;
-}
-
-/* #about .image::before {
-  content: '';
-  position: absolute;
-  left: -7.54rem;
-  top: -1.33rem;
-  height: 100%;
-  width: 100%;
-  background-color: var(--base-color-second);
-  z-index: -1;
-} */
-
-/* #about .about {
-  margin: 0 1.5rem;
-}
-
-#about .image,
-#about .image::before {
-  border-radius: 0.25rem;
-} */
-
 /*=========== BUSINESS ========================= */
-#Business {
-  background-color: var(--base-color-alt);
-  text-align: center;
-  padding: 7rem 7rem 10rem 7rem;
+.case-container {
+  width: 100%;
+  height: 520px;
+  background-color: #7a2b58;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
-.businessContent {
-  border: 2px solid var(--body-color);
-  border-radius: 8px;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
-  /* padding: 2rem; */
-  color: var(--text-color-light);
+.case-container h2 {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  font-size: 45px;
+  font-weight: bold;
+  color: #ffcc33;
+}
+
+#case-container-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  height: 300px;
+  margin: 0 auto;
+  border: 3px solid white;
+  border-radius: 15px;
   font-size: 1.25rem;
 }
 
-.subtitleBusiness {
-  padding-top: 2rem;
-  color: var(--text-color-light);
-  font-size: 2rem;
-  text-align: center;
-  background: var(--base-color-alt);
+#case-container-img {
+  width: 180px;
+  margin: 0 100px 0 120px;
 }
 
-.businessText {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
-  gap: 2rem;
+#case-container-text {
+  width: 50%;
 }
 
-.iconBusiness {
-  height: 5rem;
+#case-container-p {
+  margin: 25px;
 }
 
-.businessList {
-  list-style: none;
+.bulletsIcon {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin: 0 20px;
+}
+.bulletsIcon img {
+  display: flex;
+  width: 10px;
+  margin: 10px;
+  color: #ffcc33;
 }
 
-#listIcon {
-  color: var(--base-color-second);
-  padding: 0.5rem;
+#case-container-icon-blue-big {
+  position: absolute;
+  left: -180px;
+  bottom: -30px;
 }
+
 /*=========== DROPDOWN ========================= */
 
 .dropdownCard {
@@ -296,34 +227,23 @@ nav.show ul li {
   width: 9rem;
 }
 
-.card01 {
+.footerCard {
+  background: var(--base-color-alt);
+  height: 2rem;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.card01,
+.card02,
+.card03 {
   background: var(--body-color);
   border-radius: 10px;
   padding-top: 2rem;
 }
 
-#text-show1 {
-  padding: 2rem;
-  background: var(--base-color-second);
-  color: var(--base-color-alt);
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-
-.card02 {
-  background: var(--body-color);
-  border-radius: 10px;
-  padding-top: 2rem;
-}
-
-#text-show2 {
-  padding: 2rem;
-  background: var(--base-color-second);
-  color: var(--base-color-alt);
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-
+#text-show1,
+#text-show2,
 #text-show3 {
   padding: 2rem;
   background: var(--base-color-second);
@@ -332,40 +252,14 @@ nav.show ul li {
   border-bottom-right-radius: 10px;
 }
 
-.card03 {
-  background: var(--body-color);
-  border-radius: 10px;
-  padding-top: 2rem;
-}
-
-.footerCard {
-  background: var(--base-color-alt);
-  height: 2rem;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-
-#arrowDownImg1 {
-  width: 2rem;
-  height: 2rem;
-  align-items: center;
-  background-image: url(assets/icones/icones/icon-arrow-down.svg);
-  background-repeat: no-repeat;
-}
-
-#arrowDownImg2 {
-  width: 2rem;
-  height: 2rem;
-  align-items: center;
-  background-image: url(assets/icones/icones/icon-arrow-down.svg);
-  background-repeat: no-repeat;
-}
-
+#arrowDownImg1,
+#arrowDownImg2,
 #arrowDownImg3 {
   width: 2rem;
   height: 2rem;
   align-items: center;
-  background-image: url(assets/icones/icones/icon-arrow-down.svg);
+  text-align: center;
+  background-image: url(../assets/icones/icones/icon-arrow-down.svg);
   background-repeat: no-repeat;
 }
 
@@ -373,7 +267,8 @@ nav.show ul li {
   width: 2rem;
   height: 2rem;
   align-items: center;
-  background-image: url(assets/icones/icones/icon-arrow-up.svg);
+  text-align: center;
+  background-image: url(../assets/icones/icones/icon-arrow-down.svg);
   background-repeat: no-repeat;
 }
 
@@ -388,16 +283,16 @@ nav.show ul li {
 
 /*=========== 4 section  ========================= */
 
+#section4Title {
+  color: var(--base-color-blue);
+  text-align: center;
+}
+
 .section4 {
   background: var(--text-color);
   color: var(--text-color-light);
   padding-top: 8rem;
   padding-bottom: 5rem;
-}
-
-#section4Title {
-  color: var(--base-color-blue);
-  text-align: center;
 }
 
 .section4Card {
@@ -417,7 +312,7 @@ nav.show ul li {
 .InterativeImgBg {
   height: 41rem;
   width: 41rem;
-  background-image: url('assets/icones/icones/interactive.svg');
+  background-image: url('../assets/icones/icones/interactive.svg');
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
@@ -440,7 +335,9 @@ nav.show ul li {
   margin-right: 2.5rem;
 }
 
-.text-yellow {
+.text-yellow,
+.text-gray,
+.text-red {
   text-align: center;
   padding-top: calc(20%);
   margin: 2rem;
@@ -456,11 +353,11 @@ nav.show ul li {
   color: var(--text-color-light);
 }
 
-.text-gray {
+/* .text-gray {
   text-align: center;
   padding-top: calc(20%);
   margin: 2rem;
-}
+} */
 
 #red-circle {
   border: 1px solid var(--text-color);
@@ -472,11 +369,11 @@ nav.show ul li {
   color: var(--text-color-light);
 }
 
-.text-red {
+/* .text-red {
   text-align: center;
   padding-top: calc(20%);
   margin: 2rem;
-}
+} */
 
 #baseCardContainer {
   display: grid;

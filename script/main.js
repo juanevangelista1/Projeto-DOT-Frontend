@@ -4,7 +4,7 @@ $(document).ready(function () {
     if ($('#text-show1').is(':visible')) {
       $('#arrowDownImg1').attr('id', 'arrowUpImg')
     } else if ($('#text-show1').is(':hidden')) {
-      $('#arrowUpImg').attr('id', 'arrowUpImg')
+      $('#arrowDownImg1').removeAttr('id', 'arrowUpImg')
     }
   })
 })

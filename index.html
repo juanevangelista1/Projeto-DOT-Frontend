@@ -6,7 +6,7 @@
     <title>DOT - Digital Group</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="Assets/Fonts/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
@@ -36,33 +36,37 @@
         </div>
       </section>
       <!-- BUSINESS -->
-      <h2 class="subtitleBusiness">Lorem Ipsun</h2>
-      <section class="section" id="Business">
-        <div class="businessContent">
+      <section class="case-container">
+        <h2>Lorem Ipsun</h2>
+        <div id="case-container-div">
           <img
-            class="iconBusiness"
+            id="case-container-img"
             src="assets/icones/icones/icon-01.svg"
             alt=""
           />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-            sunt enim, ullam inventore cum nobis nisi voluptatum asperiores
-            doloribus sed distinctio animi sint cumque, culpa natus incidunt
-            labore dolorem fuga.
-          </p>
-          <ul class="businessList">
-            <li>
-              <i id="listIcon">■</i> Lorem ipsum dolor sit amet, consectetso
-            </li>
-            <li>
-              <i id="listIcon">■</i> Lorem ipsum dolor sit amet, consectetso
-            </li>
-            <li>
-              <i id="listIcon">■</i> Lorem ipsum dolor sit amet, consectetso
-            </li>
-          </ul>
+          <div id="case-container-text">
+            <p id="case-container-p">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+              erat volutpat.
+            </p>
+            <div class="bulletsIcon">
+              <img src="assets/icones/icones/square-full.svg" />
+              <p>Lorem ipsum dolor sit amet, consectetso</p>
+            </div>
+            <div class="bulletsIcon">
+              <img src="assets/icones/icones/square-full.svg" alt="" />
+              <p>Lorem ipsum dolor sit amet, consectetso</p>
+            </div>
+            <div class="bulletsIcon">
+              <img src="assets/icones/icones/square-full.svg" alt="" />
+              <p>Lorem ipsum dolor sit amet, consectetso</p>
+            </div>
+          </div>
         </div>
-        <!-- <img src="assets/icones/icones/icon-blue-big.svg" alt="" /> -->
+        <div id="case-container-icon-blue-big">
+          <img src="./assets/icones/icon-blue-big.svg" alt="" />
+        </div>
       </section>
 
       <!-- Dropdown -->
@@ -151,7 +155,10 @@
               suscipit lobortis nisl ut aliquip ex ea commodo consequat.
             </p>
             <div class="image">
-              <img src="assets/icones/icones/Grupo 126512.svg" alt="Imagem2" />
+              <img
+                src="./assets/icones/icones/Grupo 126512.svg"
+                alt="Imagem2"
+              />
             </div>
           </div>
         </div>
@@ -238,6 +245,6 @@
     <!-- JAVASCRIPT -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <script src="main.js"></script>
+    <script src="script/main.js"></script>
   </body>
 </html>
