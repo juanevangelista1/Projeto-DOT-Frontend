@@ -365,9 +365,9 @@ nav {
   border-bottom-left-radius: 10px;
 }
 
-#footerCardHide1,
-#footerCardHide2,
-#footerCardHide3 {
+#footerCardSelected1,
+#footerCardSelected2,
+#footerCardSelected3 {
   background: var(--base-color-second);
   height: 2rem;
 }
@@ -375,6 +375,8 @@ nav {
 .card01,
 .card02,
 .card03 {
+  padding-top: 2rem;
+  margin: 1rem;
   background: var(--body-color);
   border-radius: 10px;
   padding-top: 2rem;
