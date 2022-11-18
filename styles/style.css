@@ -349,6 +349,8 @@ nav {
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   gap: 2rem;
   padding: 5rem;
+  display: flex;
+  justify-content: center;
 }
 
 #cardContainer img {
@@ -380,6 +382,7 @@ nav {
   background: var(--body-color);
   border-radius: 10px;
   padding-top: 2rem;
+  flex: 1;
 }
 
 #textShow1,
