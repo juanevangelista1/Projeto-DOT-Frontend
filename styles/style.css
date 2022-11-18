@@ -84,6 +84,7 @@ body {
 /* ============ FOOTER ============== */
 
 #contact {
+  margin-top: 10rem;
   padding: 3rem;
   align-items: center;
   justify-content: space-around;
@@ -160,7 +161,7 @@ nav {
   display: flex;
   width: 100%;
   max-width: 70rem;
-  height: 100%;
+  height: 15rem;
   margin: 0 auto;
   margin-bottom: 3rem;
   border: 3px solid var(--body-color);
@@ -250,17 +251,20 @@ nav {
   padding-top: 2rem;
 }
 
-#text-show1,
-#text-show2,
-#text-show3 {
+#textShow1,
+#textShow2,
+#textShow3 {
   padding: 2rem;
   background: var(--base-color-second);
   color: var(--base-color-alt);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  display: none;
 }
 
-#arrowUpButton {
+#arrowUpButton1,
+#arrowUpButton2,
+#arrowUpButton3 {
   margin-top: 0.5rem;
   border-radius: 30px;
   width: 3rem;
@@ -315,6 +319,16 @@ nav {
 
 /*=========== SERVICES ========================= */
 
+#titleServices {
+  text-align: center;
+  padding: 1rem;
+}
+
+#textServicesContainer {
+  padding: 2rem;
+  margin-bottom: 9rem;
+}
+
 .InterativeImgBg {
   height: 41rem;
   width: 41rem;
@@ -323,15 +337,30 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: -1;
 }
 
-.img-container {
+.imgContainer {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#yellow-circle {
+.textYellow,
+.textGray,
+.textRed {
+  text-align: center;
+  padding-top: calc(20%);
+  margin: 2rem;
+}
+
+.card1 {
+  text-align: center;
+  margin-bottom: -10rem;
+  margin-right: 3rem;
+}
+
+#yellowCircle {
   border: 1px solid var(--text-color);
   background-color: var(--base-color-second);
   border-radius: 100%;
@@ -339,73 +368,80 @@ nav {
   width: 20rem;
   padding: 1rem;
   margin-right: 2.5rem;
+  z-index: -1;
+  display: none;
 }
 
-.text-yellow,
-.text-gray,
-.text-red {
-  text-align: center;
-  padding-top: calc(20%);
-  margin: 2rem;
-}
-
-#gray-circle {
+#grayCircle {
   border: 1px solid var(--text-color);
   background-color: var(--text-color);
   border-radius: 100%;
-  text-overflow: initial;
   height: 20rem;
   width: 20rem;
+  padding: 1rem;
+  margin-right: 2.5rem;
   color: var(--text-color-light);
+  display: none;
 }
 
-/* .text-gray {
-  text-align: center;
-  padding-top: calc(20%);
-  margin: 2rem;
-} */
-
-#red-circle {
+#redCircle {
   border: 1px solid var(--text-color);
   background-color: var(--base-color-red);
   border-radius: 100%;
-  text-overflow: initial;
   height: 20rem;
   width: 20rem;
+  padding: 1rem;
+  margin-right: 2.5rem;
   color: var(--text-color-light);
+  display: none;
 }
 
-/* .text-red {
+.textRed {
   text-align: center;
   padding-top: calc(20%);
   margin: 2rem;
-} */
+}
 
 #baseCardContainer {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+  margin-top: -9.25rem;
+  margin-right: 2rem;
+}
+.card2 {
+  margin-left: 2rem;
+}
+.card3 {
+  margin-left: -2rem;
 }
 
-#services .button-top {
+#buttonTop,
+#buttonLeft,
+#buttonRight {
   background: var(--base-color-blue);
   height: 2.5rem;
   width: 2.5rem;
   border: none;
   border-radius: 30px;
+  cursor: pointer;
+  background-image: url(../assets/icones/icones/icon-plus.svg);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-#services .button-left {
-  background: var(--base-color-blue);
+#buttonTopClose,
+#buttonLeftClose,
+#buttonRightClose {
+  background: var(--base-color-alt);
   height: 2.5rem;
   width: 2.5rem;
   border: none;
   border-radius: 30px;
-}
-
-#services .button-right {
-  background: var(--base-color-blue);
-  height: 2.5rem;
-  width: 2.5rem;
-  border: none;
-  border-radius: 30px;
+  cursor: pointer;
+  background-image: url(../assets/icones/icones/icon-minos.svg);
+  background-position: center;
+  background-repeat: no-repeat;
 }

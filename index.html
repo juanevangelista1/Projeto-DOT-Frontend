@@ -87,12 +87,10 @@
           <div class="card01">
             <img src="assets/icones/icones/icon-02.svg" alt="" />
             <div id="footerCard">
-              <button onclick="showCard1() " id="toggleButton1">
-                <!-- <img id="arrowDownImg1" alt="" /> -->
-              </button>
+              <button id="toggleButton1"></button>
             </div>
             <div>
-              <p id="text-show1">
+              <p id="textShow1">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
                 illo, animi, cupiditate in laudantium optio nulla alias fuga
                 atque voluptatum quidem tempora nihil, repellendus quod
@@ -103,11 +101,9 @@
           <div class="card02">
             <img src="assets/icones/icones/icon-03.svg" alt="" />
             <div id="footerCard">
-              <button id="toggleButton2" onclick="showCard2() ">
-                <!-- <img id="arrowDownImg2" alt="" /> -->
-              </button>
+              <button id="toggleButton2" onclick="ToggleCard2()"></button>
             </div>
-            <div id="text-show2">
+            <div id="textShow2">
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
                 illo, animi, cupiditate in laudantium optio nulla alias fuga
@@ -119,11 +115,9 @@
           <div class="card03">
             <img src="assets/icones/icones/icon-04.svg" alt="" />
             <div id="footerCard">
-              <button id="toggleButton3" onclick="showCard3() ">
-                <!-- <img id="arrowDownImg3" alt="" /> -->
-              </button>
+              <button id="toggleButton3"></button>
             </div>
-            <div id="text-show3">
+            <div id="textShow3">
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
                 illo, animi, cupiditate in laudantium optio nulla alias fuga
@@ -169,8 +163,8 @@
       <section class="section" id="services">
         <div class="container grid">
           <header>
-            <h1 class="title">Serviços</h1>
-            <p>
+            <h1 id="titleServices">Serviços</h1>
+            <p id="textServicesContainer">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id
               recusandae, provident alias accusantium quibusdam voluptate
               voluptatibus ut iure tenetur delectus reprehenderit, beatae optio
@@ -188,45 +182,39 @@
               exercitationem voluptatem rerum explicabo rem culpa commodi.
             </p>
           </header>
-          <div id="cards-grid">
+          <div id="cardsGrid">
             <div class="card1">
-              <button class="button-top">
-                <img src="assets/icones/icones/icon-plus.svg" alt="" />
-              </button>
+              <button id="buttonTop"></button>
             </div>
-            <div class="img-container">
+            <div class="imgContainer">
               <div class="InterativeImgBg">
-                <div id="yellow-circle">
-                  <p class="text-yellow">
+                <div id="yellowCircle">
+                  <p class="textYellow">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Lorem ipsum dolor sit amet consectetur.
                   </p>
                 </div>
-                <!-- <div id="red-circle">
-                  <p class="text-red">
+                <div id="redCircle">
+                  <p class="textRed">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Lorem ipsum dolor sit amet consectetur.
                   </p>
-                </div> -->
-                <!-- <div id="gray-circle">
-                  <p class="text-gray">
+                </div>
+                <div id="grayCircle">
+                  <p class="textGray">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Lorem ipsum dolor sit amet consectetur.
                   </p>
-                </div> -->
+                </div>
               </div>
             </div>
 
             <div id="baseCardContainer">
               <div class="card2">
-                <button class="button-left">
-                  <img src="assets/icones/icones/icon-plus.svg" alt="" />
-                </button>
+                <button id="buttonLeft"></button>
               </div>
               <div class="card3">
-                <button class="button-right">
-                  <img src="assets/icones/icones/icon-plus.svg" alt="" />
-                </button>
+                <button id="buttonRight"></button>
               </div>
             </div>
           </div>
