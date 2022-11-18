@@ -308,19 +308,19 @@ nav {
 }
 
 #businessContainerP {
-  margin: 25px;
+  margin: 2rem;
 }
 
 .bulletsIcon {
   display: flex;
   width: 100%;
   align-items: center;
-  margin: 0 20px;
+  margin: 0 1rem;
 }
 .bulletsIcon img {
   display: flex;
-  width: 10px;
-  margin: 10px;
+  width: 0.65rem;
+  margin: 0.65rem;
   color: #ffcc33;
 }
 
@@ -547,12 +547,6 @@ nav {
   margin-left: 2rem;
   color: var(--text-color-light);
   display: none;
-}
-
-.textRed {
-  text-align: center;
-  padding-top: calc(20%);
-  margin: 2rem;
 }
 
 #baseCardContainer {
