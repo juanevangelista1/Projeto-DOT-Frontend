@@ -389,6 +389,7 @@ nav {
   border-radius: 10px;
   padding-top: 2rem;
   flex: 1;
+  height: 100%;
 }
 
 #textShow1,
