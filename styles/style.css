@@ -61,11 +61,17 @@ body {
 
 /* ===========RESPONSIVIDADE ===================== */
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   body {
     width: 100%;
     -webkit-font-smoothing: antialiased;
   }
+
+  button:hover {
+    transition: 0.2s;
+    background: #e0e0e0;
+  }
+
   .container {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
@@ -103,7 +109,8 @@ body {
   }
 
   #businessContainerImg {
-    max-width: 5rem;
+    max-width: 6rem;
+    margin-top: -3rem;
     margin-bottom: auto;
     text-align: center;
   }
@@ -112,6 +119,7 @@ body {
     font-size: initial;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    justify-content: center;
   }
 
   #businessIconBlue {
@@ -139,17 +147,29 @@ body {
   }
 
   #yellowCircle {
-    height: 11rem;
-    width: 11rem;
+    height: 11rem !important;
+    width: 11rem !important;
+  }
+
+  .textYellow,
+  .textGray,
+  .textRed {
+    font-size: small;
+  }
+
+  #grayCircle,
+  #redCircle {
+    align-self: center;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    height: 11rem !important;
+    width: 11rem !important;
   }
 
   #baseCardContainer {
     grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
     margin-top: -9.25rem;
-  }
-
-  .card1 {
-    margin-right: 0;
+    gap: 60%;
   }
 }
 
@@ -252,7 +272,7 @@ nav {
   width: 100%;
   height: 100px;
   text-align: center;
-  font-size: 45px;
+  font-size: revert;
   font-weight: bold;
   color: var(--base-color-second);
 }
@@ -442,6 +462,7 @@ nav {
   height: 41rem;
   width: 41rem;
   background-image: url('../assets/icones/icones/interactive.svg');
+  background-size: 90%;
   background-position: center center;
   background-repeat: no-repeat;
   display: flex;
@@ -460,13 +481,20 @@ nav {
 .textGray,
 .textRed {
   text-align: center;
+  align-self: center;
   padding-top: calc(20%);
-  margin: 2rem;
+  margin: 1.5rem;
 }
 
 .card1 {
   text-align: center;
   margin-bottom: -10rem;
+}
+.card2 {
+  margin-left: 2rem;
+}
+.card3 {
+  margin-left: -2rem;
 }
 
 #yellowCircle {
@@ -489,7 +517,8 @@ nav {
   height: 20rem;
   width: 20rem;
   padding: 1rem;
-  margin-right: 2.5rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
   color: var(--text-color-light);
   display: none;
 }
@@ -519,12 +548,6 @@ nav {
   margin-bottom: 1.5rem;
   margin-top: -9.25rem;
   margin-right: 2rem;
-}
-.card2 {
-  margin-left: 2rem;
-}
-.card3 {
-  margin-left: -2rem;
 }
 
 #buttonTop,
