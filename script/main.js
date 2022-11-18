@@ -1,5 +1,4 @@
 // DROPDOWN
-
 $('#toggleButton1').click(function () {
   $('#textShow1').toggle().css('#textShow1', 'hidden')
   if ($('#textShow1').is(':visible') && $('#footerCard1').is(':visible')) {
