@@ -102,7 +102,7 @@ body {
     background-image: url('../assets/fotos/header-360.png');
   }
 
-  /* ======= BUSINESS CONTAINER */
+  /* ======= BUSINESS CONTAINER ============ */
 
   #businessContainerDiv {
     flex-direction: column;
@@ -124,6 +124,12 @@ body {
 
   #businessIconBlue {
     display: none;
+  }
+
+  /* ========== DROPDOWN =========== */
+  #cardContainer {
+    display: flex !important;
+    flex-wrap: wrap;
   }
 
   /* ========== 4 SECTION RESPONSIVA =========== */
