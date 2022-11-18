@@ -44,7 +44,7 @@ button:hover {
 /*=========== BASE ========================= */
 
 body {
-  font: 400 1.25rem 'DM Sans', sans-serif;
+  font: 400 1.25rem 'Poppins', sans-serif;
   color: var(--text-color);
   -webkit-font-smoothing: antialiased;
 }
@@ -57,6 +57,100 @@ body {
 .subtitle {
   padding: 2.5rem;
   color: var(--text-color-light);
+}
+
+/* ===========RESPONSIVIDADE ===================== */
+
+@media (max-width: 600px) {
+  body {
+    width: 100%;
+    -webkit-font-smoothing: antialiased;
+  }
+  .container {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+  }
+
+  #header {
+    border-bottom: 1px solid #e3e3e3;
+    margin-bottom: 2rem;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: var(--body-color);
+    width: 100%;
+  }
+
+  .logo {
+    font: 700 1.3125rem 'Poppins', sans-serif;
+    color: var(--base-color-alt);
+    font-size: x-large;
+  }
+
+  .containerGridHeader {
+    background-image: url('../assets/fotos/header-360.png');
+  }
+
+  /* ======= BUSINESS CONTAINER */
+
+  #businessContainerDiv {
+    flex-direction: column;
+  }
+
+  #businessContainerImg {
+    max-width: 5rem;
+    margin-bottom: auto;
+    text-align: center;
+  }
+
+  #businessContainerText {
+    font-size: initial;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  }
+
+  #businessIconBlue {
+    display: none;
+  }
+
+  /* ========== 4 SECTION RESPONSIVA =========== */
+
+  .section4Card {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .section4Text {
+    margin-left: 1rem;
+  }
+
+  /* ========== SERVICES RESPONSIVA =========== */
+
+  .InterativeImgBg {
+    background-size: 95%;
+  }
+
+  #yellowCircle {
+    height: 11rem;
+    width: 11rem;
+  }
+
+  #baseCardContainer {
+    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+    margin-top: -9.25rem;
+  }
+
+  .card1 {
+    margin-right: 0;
+  }
 }
 
 /*=========== HEADER ========================= */
@@ -112,7 +206,7 @@ nav {
 
 /*=========== HOME ========================= */
 
-.container-grid-Header {
+.containerGridHeader {
   background-image: url('../assets/fotos/header-1920.png');
   position: relative;
   height: 90vh;
@@ -151,6 +245,7 @@ nav {
   justify-content: center;
   align-items: center;
   position: relative;
+  justify-content: space-around;
 }
 
 .businessContainer h2 {
@@ -164,11 +259,12 @@ nav {
 
 #businessContainerDiv {
   display: flex;
-  width: 100%;
+  width: 90%;
+  height: 100%;
   max-width: 70rem;
-  height: 15rem;
   margin: 0 auto;
-  margin-bottom: 3rem;
+  margin-bottom: 8rem;
+  padding-bottom: 3rem;
   border: 3px solid var(--body-color);
   border-radius: 15px;
   font-size: 1.25rem;
@@ -178,8 +274,7 @@ nav {
 }
 
 #businessContainerImg {
-  width: 180px;
-  margin: 0 100px 0 120px;
+  width: 10rem;
 }
 
 #businessContainerText {
@@ -204,8 +299,9 @@ nav {
 }
 
 #businessIconBlue {
+  max-height: 9rem;
   position: absolute;
-  left: -12rem;
+  left: -11rem;
   bottom: -2rem;
 }
 
@@ -222,6 +318,10 @@ nav {
   text-align: center;
   padding: 2rem;
   color: var(--base-color-second);
+}
+
+.textContainer {
+  padding: 1rem;
 }
 
 #cardContainer {
@@ -342,6 +442,7 @@ nav {
   height: 41rem;
   width: 41rem;
   background-image: url('../assets/icones/icones/interactive.svg');
+  background-position: center center;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
@@ -415,7 +516,6 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 1.5rem;
   margin-bottom: 1.5rem;
   margin-top: -9.25rem;
   margin-right: 2rem;
